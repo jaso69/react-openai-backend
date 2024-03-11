@@ -10,7 +10,7 @@ export class GptController {
   }
 
   @Options('check')
-  ok(@Body() orthographyDto: OrthographyDto) {
+  ok(@Body() anyq:any) {
     return `<h1>ok</h1>`;
   }
 }
