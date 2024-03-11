@@ -1,4 +1,4 @@
-import { Body, Controller, Options, Post } from '@nestjs/common';
+import { Body, Controller, Get, Options, Post } from '@nestjs/common';
 import { GptService } from './gpt.service';
 import { OrthographyDto } from './dtos';
 @Controller('gpt')
@@ -12,5 +12,9 @@ export class GptController {
   @Options('check')
   ok(@Body() anyq:any) {
     return `<h1>ok</h1>`;
+  }
+  @Get('check')
+  ht() {
+    return `<h1>hola</h1>`;
   }
 }
