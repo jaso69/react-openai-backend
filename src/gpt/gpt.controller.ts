@@ -11,6 +11,6 @@ export class GptController {
 
   @Options('check')
   ok(@Body() orthographyDto: OrthographyDto) {
-    return this.gptService.orthographyCheck(orthographyDto);
+    return `<h1>ok</h1>`;
   }
 }
